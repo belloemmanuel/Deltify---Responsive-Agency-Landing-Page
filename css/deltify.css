@@ -144,7 +144,7 @@ p {
 
 .services-card {
   margin: 30px 0px 30px 0px;
-  height: 260px;
+  height: 300px;
   width: 250px;
   border-radius: 9px;
   box-shadow: rgba(99, 99, 99, 0.2) 5px 2px 10px -5px;
@@ -178,6 +178,36 @@ p {
 }
 
 /*----------------services container ends---------------*/
+
+/*----------------shopify-container--------------------*/
+.shopify-container {
+  display: flex;
+  position: relative;
+}
+
+.shopify-containerbg {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  z-index: -999;
+}
+
+.shopify-container img {
+  max-width: 100%;
+}
+
+.shopify-container-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 100%;
+  height: auto;
+}
+
+.shopify-container-texts p {
+  color: #979797;
+}
 
 /*-----------------media query sarts---------------*/
 
@@ -231,5 +261,18 @@ p {
     background-color: #294199;
     color: white;
     height: auto;
+  }
+
+  .shopify-container {
+    display: flex;
+  }
+
+  .shopify-container img {
+    display: none;
+  }
+
+  .shopify-container-contents {
+    padding: 50px;
+    margin: 0px;
   }
 }
