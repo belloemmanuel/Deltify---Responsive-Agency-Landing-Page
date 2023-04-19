@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +12,33 @@ a {
   text-decoration: none;
 }
 
+/*----------------general settings---------------*/
+h1,
+h2,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #e1e1e1;
+}
+
+/*----------------hero starts---------------*/
+
 .hero {
   position: relative;
+}
+
+.hero-nav h1 {
+  color: white;
+  font-size: 32px;
+  margin-top: -10px;
+}
+
+.hero-nav > h3 > a {
+  color: #fdc221;
+  border-bottom: 1px solid #fdc221;
 }
 
 .hero-img {
@@ -22,9 +50,7 @@ a {
 .hero-nav {
   display: flex;
   justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 150px;
-  padding-top: 45px;
+  padding: 50px 150px 30px 150px;
 }
 
 .hero-nav-ul {
@@ -34,16 +60,78 @@ a {
 }
 
 .hero-link {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 30px 0px 30px;
 }
 
 .hero-link a {
   color: white;
 }
 
+/*----------------hero ends---------------*/
+
+/*----------------hero contents start---------------*/
+
+.hero-contents {
+  color: white;
+  display: flex;
+  padding: 150px;
+  justify-content: center;
+}
+
+.hero-contents-text h1 {
+  font-size: 48px;
+}
+
+.hero-contents-text p {
+  font-size: 20px;
+  margin: 20px 0px 30px 0px;
+}
+
+.hero-contents-text span {
+  color: #eebd23;
+}
+
+.hero-contents-lists {
+  display: flex;
+}
+
+.hero-contents-lists > ul {
+  margin-right: 50px;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.hero-contents-lists > ul > li {
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+  margin-right: 100px;
+}
+
 /*-----------------responsive---------------*/
 @media screen and (max-width: 1500px) {
   .hero-nav {
     display: none;
+  }
+
+  .hero-contents {
+    padding: 50px;
+  }
+
+  .hero-contents-lists > ul > li {
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+
+  .hero-contents-img {
+    display: none;
+  }
+
+  .hero-img {
+    position: absolute;
+    width: 100%;
+    z-index: -999;
+    height: 100%;
   }
 }
