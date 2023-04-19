@@ -3,3 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  z-index: -999;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 45px;
+}
+
+.hero-nav-ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hero-link {
+  padding: 0px 20px 0px 20px;
+}
+
+.hero-link a {
+  color: white;
+}
+
+/*-----------------responsive---------------*/
+@media screen and (max-width: 1500px) {
+  .hero-nav {
+    display: none;
+  }
+}
