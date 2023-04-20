@@ -694,6 +694,35 @@ strike {
   font-family: 'Nunito Sans', sans-serif;
   color: #9d9d9d;
 }
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafbfd;
+  gap: 15px;
+}
+
+.portfolio-card-set {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-card {
+  display: flex;
+  width: 300px;
+  height: 370px;
+  border-radius: 15px;
+  border: 2px solid #eeecec;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
 /*--------------------media query sarts---------------*/
 
 @media screen and (max-width: 1500px) {
@@ -849,9 +878,5 @@ strike {
 
   .portfolio-view-all {
     display: none;
-  }
-  .portfolio-cards {
-    display: flex;
-    justify-content: center;
   }
 }
