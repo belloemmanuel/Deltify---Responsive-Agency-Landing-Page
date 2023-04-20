@@ -216,13 +216,14 @@ span {
 }
 
 .shopify-container-texts {
-  padding: 50px 100px 0px 0px;
+  padding: 50px 70px 0px 0px;
   width: 40%;
 }
 
 .shopify-container-texts h2 {
   font-size: 30px;
   margin: 10px 0px 10px 0px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 .shopify-container-texts p {
   color: #979797;
@@ -288,7 +289,6 @@ body
 
 .packages-cards {
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   padding-bottom: 50px;
 }
@@ -491,6 +491,88 @@ body
 
 /*-----------------packages-container end---------------*/
 
+/*-----------------offer-container starts---------------*/
+
+.offer-container {
+  background-image: url(/images/Banner3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.offer-container-contents {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  max-width: 100%;
+  height: auto;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+.offer-container-contents img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.offer-container-texts {
+  padding: 50px 100px 0px 0px;
+  width: 40%;
+}
+
+.offer-container-texts h2 {
+  font-size: 30px;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.offer-container-texts p {
+  color: #979797;
+  margin-top: 15px;
+}
+
+.offer-container-list {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.offer-list-item {
+  display: flex;
+}
+
+.offer-list-item p {
+  color: #262626;
+  margin-top: 5px;
+}
+
+.offer-list-item i {
+  color: #eebd23;
+  margin-right: 15px;
+  margin-top: 8px;
+}
+
+.offer-contents-btn {
+  border-radius: 4px;
+  padding: 20px 40px 20px 40px;
+  color: white;
+  background-color: #fdc221;
+  border: none;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+strike {
+  font-size: 14px;
+  color: #707070;
+  display: absolute;
+}
+
+/*-----------------offer-container end---------------*/
+
 /*--------------------media query sarts---------------*/
 
 @media screen and (max-width: 1500px) {
@@ -612,5 +694,40 @@ body
 
   .packages-container-card3 {
     height: auto;
+  }
+
+  .offer-container-contents {
+    padding: 50px;
+    padding-top: 50px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .offer-container-texts {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .offer-container-contents img {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .offer-container-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .offer-list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rogue-list {
+    margin-left: 150px;
+    border: 1px solid red;
   }
 }
