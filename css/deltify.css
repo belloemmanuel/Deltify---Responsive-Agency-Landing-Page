@@ -25,6 +25,10 @@ p {
   color: #e1e1e1;
 }
 
+span {
+  color: #f79e0e;
+}
+
 /*----------------hero starts---------------*/
 
 .hero {
@@ -155,7 +159,7 @@ p {
 .services-card:hover {
   background-color: #294199;
   color: white;
-  height: auto;
+  height: 300px;
 }
 
 .services-card-content {
@@ -192,34 +196,73 @@ p {
   z-index: -999;
 }
 
-.shopify-container img {
-  max-width: 100%;
+.shopify-container-contents img {
+  max-width: 50%;
+  height: 80%;
 }
 
 .shopify-container-contents {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 150px;
   margin-right: 150px;
   width: 100%;
   height: auto;
+  padding-top: 50px;
 }
 
+.shopify-container-texts {
+  padding: 100px;
+  width: 50%;
+}
+
+.shopify-container-texts h2 {
+  font-size: 30px;
+  margin: 10px 0px 10px 0px;
+}
 .shopify-container-texts p {
   color: #979797;
+  margin-top: 15px;
 }
 
 .shopify-container-list {
   display: flex;
+  margin-top: 20px;
 }
 
 .shopify-list-item {
   display: flex;
 }
 
+body
+  > div.shopify-container
+  > div
+  > div
+  > div
+  > div.shopify-container-items {
+  margin-left: 120px;
+}
+
+.shopify-list-item p {
+  color: #262626;
+  margin-top: 5px;
+}
+
 .shopify-list-item i {
   color: #eebd23;
   margin-right: 15px;
+  margin-top: 8px;
+}
+
+.shopify-contents-btn {
+  border-radius: 4px;
+  padding: 20px 40px 20px 40px;
+  color: white;
+  background-color: #fdc221;
+  border: none;
+  font-size: 16px;
+  margin-top: 40px;
 }
 
 /*-----------------media query sarts---------------*/
@@ -281,7 +324,15 @@ p {
   }
 
   .shopify-container img {
-    display: none;
+    /* display: none; */
+    width: 100%;
+  }
+
+  .shopify-containerbg {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -999;
   }
 
   .shopify-container-contents {
