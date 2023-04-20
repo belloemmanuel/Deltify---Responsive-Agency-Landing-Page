@@ -269,7 +269,7 @@ body
   margin-top: 40px;
 }
 
-/*-----------------packages-container sarts---------------*/
+/*-----------------packages-container cards---------------*/
 
 .packages-container {
   display: flex;
@@ -290,6 +290,7 @@ body
   display: flex;
   /* flex-direction: row; */
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .packages-container-cards {
@@ -306,7 +307,16 @@ body
   padding: 20px;
   background-color: #fcfaed;
   border-radius: 21px;
-  height: 600px;
+  height: auto;
+  width: 300px;
+}
+
+.packages-container-card1::before {
+  margin-top: -20px;
+  content: '';
+  width: 90%;
+  border-bottom: 6px solid #294199;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .packages-container-card1 h2 {
@@ -338,9 +348,71 @@ body
   padding-bottom: 20px;
 }
 
+.packages-container-card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #294199;
+  border-radius: 21px;
+  height: auto;
+  width: 300px;
+}
+
+.packages-container-card2::before {
+  margin-top: -20px;
+  content: '';
+  width: 90%;
+  border-bottom: 6px solid #eebd23;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.packages-container-card2 h2 {
+  font-family: 'Pacifico', cursive;
+  color: #eebd23;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.packages-container-card2 h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600px;
+  letter-spacing: -1px;
+  position: relative;
+  color: #eebd23;
+}
+
+.packages-container-card2 > h1 > span {
+  color: #eebd23;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+.packages-container-card2 > p {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.packages-container-cardsbtn {
+  border: 1px solid #eebd23;
+  background-color: #fcfaed;
+  padding: 10px 40px 10px 40px;
+  border-radius: 154px;
+  color: #eebd23;
+  margin-top: 10%;
+}
+
+.packages-container-item2 p {
+  color: white;
+}
+
 /*-----------------packages-container end---------------*/
 
-/*-----------------media query sarts---------------*/
+/*--------------------media query sarts---------------*/
 
 @media screen and (max-width: 1500px) {
   .hero-nav {
