@@ -209,6 +209,19 @@ p {
   color: #979797;
 }
 
+.shopify-container-list {
+  display: flex;
+}
+
+.shopify-list-item {
+  display: flex;
+}
+
+.shopify-list-item i {
+  color: #eebd23;
+  margin-right: 15px;
+}
+
 /*-----------------media query sarts---------------*/
 
 @media screen and (max-width: 1500px) {
