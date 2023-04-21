@@ -630,8 +630,9 @@ strike {
 
 /*-----------------value-container ends---------------*/
 
+/*-----------------portfolio-container starts---------------*/
+
 .portfolio-container {
-  /* margin-top: 100px; */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -726,11 +727,16 @@ strike {
   justify-content: center;
 }
 
+/*-----------------portfolio-container ends---------------*/
+
+/*-----------------faq-container starts---------------*/
+
 .faq-container {
   display: flex;
   align-items: center;
   width: 100%;
   flex-direction: column;
+  background-color: #fafbfd;
 }
 
 .faq-container-head {
@@ -779,6 +785,87 @@ strike {
 .faq2 {
   width: 35%;
   padding: 50px;
+}
+
+/*-----------------faq-container ends---------------*/
+
+/*-----------------testimonial-container ends---------------*/
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+}
+
+.testimonial-container-head {
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  width: 45%;
+  text-align: center;
+}
+
+.testimonial-container-head p {
+  color: #979797;
+  text-align: center;
+}
+
+.testimonial-container-head h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 20px;
+}
+
+.testimonial {
+  border: 2px solid #e2e2e2;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.testimonial-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-head img {
+  margin-right: 0px;
+}
+
+.testimonial-head p {
+  color: #686868;
+}
+
+.testimonial-head p > span {
+  color: #686868;
+  font-size: 10px;
+}
+
+.testimonial-personicon {
+  margin-right: 20px;
+}
+
+.star {
+  margin-left: 50px;
+  width: 12%;
+  height: 12%;
+}
+
+.testimonial-star {
+  padding-top: 15px;
+}
+
+.testimonial-star i {
+  color: #fbbf02;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 15px;
+  color: #646464;
 }
 
 /*--------------------media query sarts---------------*/
@@ -959,5 +1046,11 @@ strike {
   .faq2 {
     width: 100%;
     text-align: center;
+  }
+
+  .testimonial-container-head {
+    margin-top: 20px;
+    margin-bottom: -40px;
+    width: 100%;
   }
 }
