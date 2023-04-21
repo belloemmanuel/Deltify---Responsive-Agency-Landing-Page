@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -655,7 +657,7 @@ strike {
   display: flex;
   justify-content: center;
   padding-top: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   position: relative;
   background-color: #fafbfd;
 }
@@ -703,6 +705,7 @@ strike {
   align-items: center;
   background-color: #fafbfd;
   gap: 15px;
+  padding-bottom: 50px;
 }
 
 .portfolio-card-set {
@@ -721,6 +724,61 @@ strike {
   background-color: white;
   align-items: center;
   justify-content: center;
+}
+
+.faq-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.faq-container-head {
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  width: 45%;
+  text-align: center;
+}
+
+.faq-container-head p {
+  color: #979797;
+  text-align: center;
+}
+
+.faq-container-head h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 20px;
+}
+
+.faqs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.faq1 {
+  width: 35%;
+  padding: 50px;
+  padding-bottom: 5px;
+}
+
+.faq {
+  margin-bottom: 20px;
+}
+
+.faq h2 {
+  font-family: 'Ibarra Real Nova', serif;
+}
+.faq p {
+  color: #646464;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.faq2 {
+  width: 35%;
+  padding: 50px;
 }
 
 /*--------------------media query sarts---------------*/
@@ -878,5 +936,28 @@ strike {
 
   .portfolio-view-all {
     display: none;
+  }
+
+  .faq-container-head {
+    margin-top: 20px;
+    margin-bottom: -40px;
+    width: 100%;
+  }
+
+  .faqs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .faq1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .faq2 {
+    width: 100%;
+    text-align: center;
   }
 }
