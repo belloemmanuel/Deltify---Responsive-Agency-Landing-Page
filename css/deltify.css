@@ -40,6 +40,16 @@ span {
   position: relative;
 }
 
+.menu {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: none;
+}
+
 .hero-nav h1 {
   color: white;
   font-size: 32px;
@@ -1108,5 +1118,15 @@ strike {
   .hero-list {
     margin-top: 50px;
     width: 100%;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    color: white;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: block;
   }
 }
