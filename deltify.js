@@ -16,12 +16,10 @@ for (i = 0; i < close.length; i++) {
 hamburgerImg.addEventListener('click', open);
 closeBtn.addEventListener('click', closenav);
 
-function open(e) {
+function open() {
   sidebar.style.display = 'block';
-  e.preventDefault();
 }
 
-function closenav(e) {
+function closenav() {
   sidebar.style.display = 'none';
-  e.preventDefault();
 }
