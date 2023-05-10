@@ -1,20 +1,8 @@
-// let hamburger = document.getElementsByClassName('menu');
-// let sidebarmenu = document.getElementsByClassName('sidebar-wrapper');
-// let close = document.getElementsByClassName('sidebar-close');
+import Splide from '@splidejs/splide';
+
 const menuId = document.getElementById('menuid');
 const sidebarWrapper = document.getElementById('sidebar-wrapper');
 const sidebarClose = document.getElementById('sidebar-close');
-
-// for (i = 0; i < sidebarmenu.length; i++) {
-//   var sidebar = sidebarmenu[i];
-// }
-// for (i = 0; i < hamburger.length; i++) {
-//   var hamburgerImg = hamburger[i];
-// }
-
-// for (i = 0; i < close.length; i++) {
-//   var closeBtn = close[i];
-// }
 
 menuId.addEventListener('click', open);
 sidebarClose.addEventListener('click', closenav);
@@ -26,3 +14,4 @@ function open() {
 function closenav() {
   sidebarWrapper.style.display = 'none';
 }
+
