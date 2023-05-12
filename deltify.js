@@ -1,4 +1,3 @@
-import Splide from '@splidejs/splide';
 
 const menuId = document.getElementById('menuid');
 const sidebarWrapper = document.getElementById('sidebar-wrapper');

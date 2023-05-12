@@ -906,7 +906,7 @@ strike {
 
 .testimonials {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 15px;
   padding-top: 40px;
@@ -915,6 +915,16 @@ strike {
 
 .sidebar-wrapper {
   display: none;
+}
+
+.splide{
+  width: 80%;
+  margin: 0px auto;
+}
+
+.splide-second{
+  width: 80%;
+  margin: 0px auto;
 }
 /*--------------------media query sarts---------------*/
 
@@ -1189,9 +1199,6 @@ strike {
     margin-right: 10px;
   }
 
-  .hero-contents-img {
-  }
-
   .hero-img {
     position: absolute;
     width: 100%;
@@ -1350,6 +1357,10 @@ strike {
     width: 100%;
   }
 
+  .testimonial{
+    width: 100%;
+  }
+
   .testimonial-container {
     display: flex;
     align-items: center;
@@ -1382,5 +1393,17 @@ strike {
     margin-top: 60px;
     display: block;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .splide-desktop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .splide-mobile{
+    display: none;
   }
 }
